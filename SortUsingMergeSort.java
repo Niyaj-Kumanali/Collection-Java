@@ -2,7 +2,8 @@ package Collection;
 
 import java.util.Arrays;
 
-public class SortUsingMergeSort {
+public class
+SortUsingMergeSort {
     public static void main(String[] args) {
         int[] arr = {1,4,2,5,1,6};
         System.out.println(Arrays.toString(mergeSort(arr)));

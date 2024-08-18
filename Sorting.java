@@ -14,7 +14,6 @@ public class Sorting {
         System.out.println(Arrays.toString(selectionSort(arr2)));
         System.out.println(Arrays.toString(insertionSort(arr3)));
         System.out.println(Arrays.toString(cyclicSort(arr4)));
-
     }
 
     public static int[] bubbleSort(int[] arr) {
@@ -54,7 +53,6 @@ public class Sorting {
     public static int[] cyclicSort(int[] arr)
     {
         int i = 0;
-
         while(i < arr.length - 1) {
             //It is for range 1 to n but for 0 to n remove -1 from below
             int correct = arr[i] -1;

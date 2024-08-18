@@ -3,8 +3,8 @@ package Collection;
 public class LCMofTwoNumbers {
     public static void main(String[] args) {
         int a = 12;
-        int b = 13;
-//        System.out.println(calcLCM(a,b));
+        int b = 14;
+        System.out.println(calcLCM(a,b));
         System.out.println(findLCM(a,b));
 
     }
@@ -20,13 +20,13 @@ public class LCMofTwoNumbers {
     }
 
     public static int findLCM(int a, int b){
-        int max = Math.max(a, b);
-        int i = 2;
+        int i = 1;
+        int max;
         while(true){
-            if(max%a==0 && max%b==0){
+            max = Math.max(a, b)*i;
+            if(max%a == 0 && max%b== 0){
                 return max;
             }
-            max *= i;
             i++;
         }
     }
